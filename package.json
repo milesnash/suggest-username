@@ -1,0 +1,50 @@
+{
+  "name": "suggest-username",
+  "version": "0.1.0",
+  "description": "SuggestUsername: The Teeny Username Generator",
+  "license": "MIT",
+  "repository": "https://github.com/milesnash/suggest-username",
+  "author": {
+    "name": "Miles Nash",
+    "email": "miles.nash37@gmail.com",
+    "url": "github.com/milesnash"
+  },
+  "bin": {
+    "suggest-username": "cli.js"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "xo && nyc --check-coverage --lines 100 --functions 100 --branches 100 ava",
+    "report": "nyc report --reporter=html",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test-local": "npm run-script test && npm run-script report"
+  },
+  "files": [
+    "index.js",
+    "cli.js",
+    "lib",
+    "files",
+    "test"
+  ],
+  "keywords": [
+    "username",
+    "random",
+    "suggest",
+    "suggest username",
+    "generate username"
+  ],
+  "dependencies": {
+    "meow": "^3.7.0",
+    "log-symbols": "^1.0.2",
+    "chalk": "^1.1.3"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "xo": "^0.14.0",
+    "nyc": "^6.4.0",
+    "execa": "^0.2.2",
+    "coveralls": "^2.11.9"
+  }
+}
