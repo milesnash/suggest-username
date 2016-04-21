@@ -50,21 +50,22 @@ $ supersonic.macebearer.XcGvTt
 
 #### numberOfWords
 
-*Required*<br>
 Type: `integer`
+Default: 2
 
 The number of random words generated.
 
 #### glue
 
-*Required*<br>
 Type: `string`
+Default: ' '
 
 Used to join the generated words together.
 
 #### append
 
 Type: `string`
+Default: ''
 
 | Enum          |
 | ------------- |
