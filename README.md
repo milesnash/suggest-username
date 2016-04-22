@@ -14,6 +14,21 @@ $ npm install --save suggest-username
 
 ### API
 
+#### Basic
+
+```js
+const suggestUsername = require('suggest-username');
+
+suggestUsername().then(username => {
+	console.log(username);
+});
+//  Output example:
+//  $ supersonic macebearer
+//
+```
+
+#### Advanced
+
 ```js
 const suggestUsername = require('suggest-username');
 
@@ -39,6 +54,12 @@ $ suggest-username --help
     --help 				   This help menu
 
 Examples
+
+Basic:
+$ suggest-username
+$ supersonic macebearer
+
+Advanced:
 $ suggest-username -n 2 -g . -a l
 $ supersonic.macebearer.XcGvTt
 ```
@@ -51,6 +72,7 @@ $ supersonic.macebearer.XcGvTt
 #### numberOfWords
 
 Type: `integer`
+
 Default: 2
 
 The number of random words generated.
@@ -58,6 +80,7 @@ The number of random words generated.
 #### glue
 
 Type: `string`
+
 Default: ' '
 
 Used to join the generated words together.
@@ -65,6 +88,7 @@ Used to join the generated words together.
 #### append
 
 Type: `string`
+
 Default: ''
 
 | Enum          |

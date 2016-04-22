@@ -46,7 +46,15 @@ const cli = meow(`
 	  --help 				 This help menu
 
 	Examples
-	  $ suggest-username -n 3 -g . -a n
+	--------
+
+	Basic:
+	  $ suggest-username
+	  $ supersonic macebearer
+
+	Advanced:
+	  $ suggest-username -n 2 -g . -a l
+	  $ supersonic.macebearer.XcGvTt
 `);
 
 for (let flag in cli.flags) {
